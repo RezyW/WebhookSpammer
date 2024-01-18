@@ -2,7 +2,7 @@ import requests
 import time
 
 def send_message(webhook_url, message, delay, message_count):
-    for _ in range(message_count):
+    for _ in range(amount_of_messages):
         data = {'content': message}
         response = requests.post(webhook_url, json=data)
 
